@@ -1,0 +1,52 @@
+:root{
+    --bs-font-sans-serif: 'Plus Jakarta Sans';
+}
+.gold-text {
+    color: #00ffff;
+  }
+  .btn-gold {
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .btn-gold:hover {
+    transform: scale(1.05);
+    background-color: #00ffff; /* Slightly darker gold for hover */
+  }
+  .card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+  }
+  .form-control{
+    background-color: #3f3f3f;
+    border: 1px solid #555;
+    color: #000;
+  }
+  .form-control:focus {
+    background-color: #444;
+    border-color: #00ffff;
+    box-shadow: 0 0 5px rgba(0, 247, 255, 0.856);
+  }
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  .tab-content {
+    padding: 20px;
+  }
+  .nav-tabs .nav-link {
+    color: #fff;
+    border: none;
+    background-color: transparent;
+  }
+  .nav-tabs .nav-link.active {
+    color: #00ffff;
+    border-bottom: 2px solid #00ffff;
+  }
+  .nav-tabs .nav-link-N-555:hover {
+    color: #00ffff;
+  }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/font.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-dark">
+    <div class="container py-5 w-100 h-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-6">
+            <div class="card card">
+              <div class="card-body">
+                <!-- Tabs for Login and Sign Up -->
+                <ul class="nav nav-tabs nav-tabs nav-justified mb-4" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Sign Up</button>
+                  </li>
+                </ul>
+                <!-- Tab Content -->
+                <div class="tab-content tab-content" id="myTabContent">
+                  <!-- Login Form -->
+                  <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                    <h3 class="gold-text text-center mb-4">Welcome Back!</h3>
+                    <form id="loginForm">
+                      <div class="mb-3">
+                        <label for="loginEmail" class="form-label text-white">Email Address</label>
+                        <input type="email" class="form-control form-control" id="loginEmail" placeholder="Enter your email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="loginPassword" class="form-label text-white">Password</label>
+                        <input type="password" class="form-control form-control" id="loginPassword" placeholder="Enter your password" required>
+                      </div>
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-gold btn-lg  mt-4">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Sign Up Form -->
+                  <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                    <form id="signupForm">
+                      <div class="mb-3">
+                        <label for="signupName" class="form-label text-white">Full Name</label>
+                        <input type="text" class="form-control form-control" id="signupName" placeholder="Enter your name" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="signupEmail" class="form-label text-white">Email Address</label>
+                        <input type="email" class="form-control form-control" id="signupEmail" placeholder="Enter your email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="signupPassword" class="form-label text-white">Password</label>
+                        <input type="password" class="form-control form-control" id="signupPassword" placeholder="Enter your password" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="signupConfirmPassword" class="form-label text-white">Confirm Password</label>
+                        <input type="password" class="form-control form-control" id="signupConfirmPassword" placeholder="Confirm your password" required>
+                      </div>
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-gold btn-lg mt-4">Sign Up</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="assets/JS/bootstrap.bundle.min.js"></script>
+      
+</body>
+</html>
