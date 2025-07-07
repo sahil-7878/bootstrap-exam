@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/font.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-warning-emphasis fs-4 fw-medium" href="#">Cunio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="login-detail d-none d-lg-block">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item ">
+                                <a href="#" class="  text-black  px-1 " data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvas"><i class="bi bi-search"></i></a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="#" class="position-relative  text-black px-1" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvas-end"><i class="bi bi-basket3"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- offcanvas search -->
+    <div class="offcanvas offcanvas-top h-100 bg-dark" data-bs-scroll="true" data-bs-backdrop="true" id="searchOffcanvas">
+        <div class="offcanvas-body d-flex align-items-center  w-100 h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <form action="" method="">
+                            <input type="search" class="form-control" placeholder="Search Here....">
+                        </form>
+                    </div>
+                    <div class="col-1 py-1" data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas cart -->
+    <div class="offcanvas offcanvas-end justify-content-center" data-bs-scroll="true" data-bs-backdrop="true" id="cartOffcanvas">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="cartOffcanvas">Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="fs-4 fw-bold">Nothing in the cart</p>
+          <a href="#" class="btn btn-outline-warning">Continue Shopping</a>
+        </div>
+      </div>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+            </div>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-top h-100 bg-dark" id="offcanvas">
+        <div class="offcanvas-body d-flex align-items-center  w-100 h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <form action="" method="">
+                            <input type="search" class="form-control" placeholder="Search Here....">
+                        </form>
+                    </div>
+                    <div class="col-1 py-1" data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas-end" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center ">
+            <h4>Empty cart</h4>
+            <p class="text-light">No products in the cart.</p>
+            <button type="button" class="btn btn-info text-light" data-bs-dismiss="offcanvas">Back to Home</button>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

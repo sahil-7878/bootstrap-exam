@@ -1,0 +1,28 @@
+:root{
+    --bs-font-sans-serif: 'Plus Jakarta Sans';
+}
+.navbar-nav .nav-link {
+    position: relative;
+    transition: all 0.2s ease;
+    color: #000; 
+}
+.navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 100%;
+    background-color: #e69500;
+    transition: all 0.2s ease; 
+}
+.navbar-nav .nav-link:hover::after{
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 95%;
+    height: 2px;
+    background-color: #e69500;
+}
+.list-inline-item a{
+    color: #000;
+}
