@@ -1,0 +1,23 @@
+:root{
+    --bs-font-sans-serif: 'Plus Jakarta Sans';
+}
+.testimonial-card {
+    transition: all 0.3s;
+    border: 2px solid cyan;
+}
+.testimonial-card img{
+    border: 5px solid rgb(0, 247, 247);
+}
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgb(13, 247, 255);
+}
+
+.testimonial-card .card-img-top {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: -50px;
+}
